@@ -1,0 +1,105 @@
+footer {
+  background-color: #0008; 
+  padding: 2rem 0; 
+  margin-top: 0;
+  padding-top: 0;
+}
+
+footer h3, footer h5 {
+  color: #ffffff; 
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+footer p, footer .nav-link {
+  color: #cccccc; 
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+footer .btn {
+  width: 48%;
+  margin: 0.5rem 0; 
+}
+
+footer .btn-outline-light {
+  border-color: #ffffff; 
+  color: #ffffff; 
+}
+footer .btn-outline-light:hover {
+  background-color: #6c757d; /* Color gris */
+  border-color: #fff; /* Borde gris */
+  color: #fff !important; /* Asegura que el texto sea blanco */
+}
+
+/* Alineación y separación de columnas */
+footer .d-flex {
+  display: flex;
+}
+
+footer .text-start {
+  text-align: left;
+}
+
+footer .mb-3 {
+  margin-bottom: 1rem; /* Separación de elementos dentro de la columna */
+}
+
+/* Estilo para los enlaces del menú */
+footer .nav-link {
+  color: #cccccc; /* Color gris para los enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+footer .nav-link:hover {
+  color: #ffffff; /* Color blanco al pasar el ratón */
+}
+
+.whatsapp-button {
+  background-color: #25d366; /* Verde de WhatsApp */
+  color: white; /* Texto blanco */
+  border: 2px solid white; /* Borde blanco */
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Verde más oscuro al pasar el ratón */
+  border-color: #128c7e; /* Borde más oscuro al pasar el ratón */
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 767px) {
+  footer .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .text-start {
+    text-align: center; /* Centrar los títulos en pantallas pequeñas */
+  }
+
+  footer .text-center-content p {
+    text-align: center; /* Centrar los textos debajo de "Contacto" y "Menú" en pantallas pequeñas */
+  }
+
+  footer .btn {
+    width: 100%; /* Los botones ocupan el 100% del ancho en pantallas pequeñas */
+    margin: 0.5rem 0;
+  }
+
+  footer .nav-link {
+    text-align: center; /* Centrar los enlaces del menú */
+  }
+
+  footer .nav-link {
+    margin-bottom: 0.5rem;
+  }
+
+  footer h3, footer h5 {
+    text-align: center; /* Centrar los títulos en pantallas pequeñas */
+  }
+
+  footer p, footer a {
+    text-align: center;    
+  }
+}
+

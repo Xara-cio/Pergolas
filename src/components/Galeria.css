@@ -1,0 +1,82 @@
+/* Contenedor principal de la galería */
+.galeria-container {
+  background-color: #4d4c4c; /* Fondo gris oscuro */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.row {
+  padding-bottom: 1%;
+}
+  
+.col {
+  padding: 1%;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}  
+
+/* Responsive para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  /* Reducir el padding en el contenedor principal para que ocupe más espacio */
+  .galeria-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* Ajustar las columnas a una sola por fila en móviles */
+  .col {
+    padding: 5px; /* Espacio más pequeño entre columnas */
+  }
+
+  /* Las imágenes ocuparán todo el ancho de su columna */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Ajustar la visualización de las imágenes en una sola columna */
+  .col-xs-6 {
+    width: 100%; /* Asegura que las columnas ocupen todo el ancho disponible */
+  }
+}
+
+/* Responsive para pantallas medianas (tabletas) */
+@media (max-width: 992px) {
+  /* En tabletas, puedes tener hasta 2 columnas */
+  .col {
+    padding: 5px; /* Espacio más pequeño entre columnas */
+  }
+
+  .col-xs-6 {
+    width: 50%; /* Dos columnas en lugar de tres en tabletas */
+  }
+}
+
+/* Responsive para pantallas grandes (escritorios) */
+@media (min-width: 993px) {
+  /* Ajustar la galería para tres columnas (ya está bien configurado en React-Bootstrap con md={4}) */
+  .col-xs-6 {
+    width: 33.33%; /* Tres columnas por fila en pantallas grandes */
+  }
+}
+
+
+
+  
+  
+  
+
+
+  

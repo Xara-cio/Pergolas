@@ -1,0 +1,133 @@
+.navbar {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .justify-content-center {
+  flex: 1;
+}
+
+.navbar .d-flex.align-items-end {
+  text-align: right;
+}
+
+.navbar .btn-outline-light {
+  color: #fff; /* Texto blanco */
+  border-color: #fff; /* Borde blanco */
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #6c757d; /* Color gris */
+  border-color: #fff; /* Borde gris */
+  color: #fff !important; /* Asegura que el texto sea blanco */
+}
+
+/* Estilo para los íconos de las redes sociales */
+.whatsapp-icon,
+.facebook-icon,
+.instagram-icon {
+  color: #ffffff; /* Color blanco por defecto */
+  transition: color 0.2s ease; /* Transición suave para el color */
+}
+
+/* Cambiar color en el hover */
+.whatsapp-icon:hover {
+  color: #25d366; /* Color oficial de WhatsApp al pasar el ratón */
+  transform: scale(1.2);
+}
+
+.facebook-icon:hover {
+  color: #3b5998; /* Color oficial de Facebook al pasar el ratón */
+  transform: scale(1.2);
+}
+
+.instagram-icon:hover {
+  color: #e4405f; /* Color oficial de Instagram al pasar el ratón */
+  transform: scale(1.2);
+}
+
+/* Cambiar el borde del menú hamburguesa a blanco */
+.navbar-toggler {
+  border-color: #ffffff !important; /* Forzar borde blanco */
+}
+
+/* Cambiar las líneas del menú hamburguesa a blanco */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+
+/* Pantallas medianas (tabletas y pantallas pequeñas) */
+@media (max-width: 992px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    margin-bottom: 1rem;
+  }
+
+  .navbar .justify-content-center {
+    flex: none;
+    margin-bottom: 1rem;
+  }
+
+  .navbar .btn-outline-light {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar .social-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .navbar {
+    padding-bottom: 1rem;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar .btn-outline-light {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar .social-icon {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  .navbar-brand img {
+    width: 80px; /* Reducir tamaño del logo */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    border-color: #ffffff !important; 
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+}

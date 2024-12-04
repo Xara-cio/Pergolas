@@ -1,0 +1,296 @@
+.main-section .no-padding {
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura altura completa */
+  max-width: 100vh;
+  margin: 0; /* Elimina margen */
+  padding: 0; /* Elimina padding */
+
+
+}
+
+h2, h4 {
+  text-align: center; /* Centrar el texto */
+  padding: 10px 10px; /* Espacio horizontal interno */
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+.main-section .main-pre-carousel .img {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.main-section .carousel-image {
+  max-width: 120%;
+  max-height: 130vh;
+  border-radius: 8px;
+}
+
+
+.main-section .main-pre-carousel {
+  color: #fff;
+  padding: 0; /* Elimina el padding */
+  margin: 0;  /* Elimina el margin */
+  background-image: url("./images/fondo_madera.webp");
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  min-height: 20vh; /* Reduce la altura a lo necesario, puedes ajustar este valor */
+  height: auto; /* Ajusta automáticamente la altura */
+}
+
+.button-container {
+  display: flex; /* Flexbox para alinear elementos */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin-top: 20px; /* Espacio arriba */
+  margin-bottom: 40px; /* Espacio abajo */
+
+}
+
+.main-btn-custom {
+  padding: 7px 20px; /* Aumenta el tamaño del botón */
+  font-size: 1rem; /* Ajusta el tamaño del texto */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #000; /* Color de fondo */
+  border-color: #fff; /* Color del borde */
+  text-align: center; /* Asegura el centrado interno del texto */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  align-items: center;
+}
+
+.main-btn-custom {
+  width: 100%; /* Botón ocupa todo el ancho */
+  max-width: 300px; /* Limita el ancho máximo */
+}
+
+.main-btn-custom:hover {
+  background-color: #6c757d !important; 
+  border-color: #fff !important; 
+  align-items: center;
+  color: #fff !important;
+}
+
+.main-btn-custom-size {
+  border-color: #fff; 
+  color: #fff;
+  padding: 0.3rem 1rem; 
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+  background-color: #000;
+}
+
+.btn-custom-size:hover {
+  background-color: #6c757d !important; /* Color de fondo gris */
+  border-color: #fff !important;     /* Color del borde gris */
+  color: #fff !important;  
+}
+
+
+.main-carousel {
+  display: flex; /* Para disfrutar de más control sobre el manejo de los elementos */
+  justify-content: center; /* Centra la imagen */
+  border-radius: 8px;
+  align-items: center;
+  position: relative;
+}
+
+.main-carousel-image {
+  width: 60%; 
+  height: 60%;
+  max-height: 60%; 
+  display: block;
+}
+
+.main-carousel-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* Ajusta este valor a 0 o píxeles negativos si necesitas reducir más el espacio */
+  padding-top: 0px; /* También puedes ajustar el padding */
+  background-color: rgb(25, 29, 25); /* Cambia este valor al color que desees */
+
+}
+
+.carousel-background {
+  background-color: rgb(25, 29, 25); /* Cambia este valor al color que desees */
+  padding: 20px; /* Opcional: agrega un padding para que no se vea pegado */
+  border-bottom: solid whitesmoke 0.5px;
+  border-top: solid whitesmoke 0.5px;
+  max-width: 110%;
+  height: auto;
+  max-height: 100vh;
+}
+
+
+.button-counter-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el botón y el contador */
+  position: relative; 
+}
+
+.custom-text {
+  color: black; 
+}
+
+.check-icon {
+  color: white; /* Color blanco para el icono de check */
+}
+
+/* Estilo de la imagen dentro del carrusel */
+.main-carousel-image {
+  max-width: 120%;
+  max-height: 130vh;
+  border-radius: 8px;
+}
+
+/* Estilos para los botones de navegación del carrusel */
+.main-section .main-carousel-prev,
+.main-section .main-carousel-next,
+.main-section .main-carousel-play-pause {
+  background-color: rgb(187, 184, 184); /* Color de fondo */
+  border-radius: 5px; /* Bordes redondeados */
+  width: 40px; /* Ancho del botón */
+  height: 40px; /* Altura del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.main-carousel-prev-icon,
+.main-carousel-next-icon,
+.main-carousel-play-pause-icon {
+  background-color: white; /* Fondo blanco para el icono */
+  border-radius: 5px; /* Bordes redondeados del icono */
+  width: 16px; /* Tamaño del icono */
+  height: 16px; /* Tamaño del icono */
+  border: #a8a8a8;
+}
+
+.main-section .main-carousel-control-prev:hover,
+.main-section .main-carousel-control-next:hover,
+.main-section .main-carousel-play-pause:hover {
+  background-color: #4d4c4c; /* Color de fondo al pasar el mouse */
+}
+
+/* Centrar los Row */
+.main-service-bloque1, 
+.main-service-bloque2, 
+.main-service-bloque3,
+.main-service-bloque4,
+.main-service-bloque5 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h1 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-service-text {
+  flex: 1;  /* Permite que las columnas crezcan proporcionalmente */
+  max-width: 30%;  /* Puedes ajustar este valor para reducir el tamaño de las columnas de texto */
+  margin: 0 10px;  /* Ajusta los márgenes para acercar las columnas */
+  padding: 10px;  /* Puedes ajustar el padding para mayor control */
+  text-align: left;  /* Para alinear el texto a la izquierda si prefieres */
+
+}
+
+.main-service-text h3 {
+  font-size: 30px; 
+}
+
+.main-service-text p {
+  font-size: 24px;
+}
+
+.main-service-image img{
+  border-radius: 8px;
+  width: 100%;  /* Asegura que las imágenes no se desborden */
+  max-width: 100%;  /* Ajusta el máximo tamaño permitido */
+  height: auto;
+}
+
+.main-service-image {
+  flex: 1;
+  max-width: 50%;  /* Asegura que las imágenes no ocupen demasiado espacio */
+  padding: 10px;  /* Ajusta el espacio alrededor de la imagen */
+}
+
+.main-services-title::before {
+  content: "*";
+  display: block;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main-services-title {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 20px; 
+}
+
+
+.main-service-text::before {
+  content: "*";
+  display: block;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main-service-text {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .main-service-text {
+    max-width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    text-align: center; /* Centra el texto */
+  }
+
+  .main-service-image {
+    max-width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+
+  .main-carousel-image {
+    width: 100%; /* Asegura que la imagen del carrusel ocupe todo el ancho */
+    height: auto; /* Mantiene la proporción */
+  }
+
+  h1 {
+    font-size: 20px; /* Reduce el tamaño del texto en pantallas pequeñas */
+  }
+
+  h2, h4 {
+    font-size: 15px; /* Ajusta el tamaño de los subtítulos */
+  }
+}

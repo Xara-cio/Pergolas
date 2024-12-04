@@ -1,0 +1,208 @@
+.contacto-container {
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgba(24, 23, 23, 1), rgba(105, 105, 105, 1.5));
+    padding-top: 20px;
+    padding-bottom: 20px;
+}    
+
+
+.contacto-atencion {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+
+    padding: 20px 0px;
+    background-color: black;
+    border-bottom: 1.5px solid white;
+    border-top: 1.5px solid white; 
+    box-sizing: border-box;   
+}
+
+.contacto-texto-col {
+    flex: 0 0 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.contacto-text-col p {
+    margin: 10px 0; 
+}
+
+
+.contacto-form-col {
+    /* Asegura un relleno uniforme para el formulario */
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo opcional para destacar el formulario */
+    border-left: 1.5px solid white; /* Línea divisoria */
+    box-sizing: border-box;
+    max-width: 70%;
+    flex: 0 0 70%;
+}
+  
+
+.contacto-form-col button {
+    width: 100%; /* Ocupa el mismo ancho que el formulario */
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 15px; /* Ajusta el relleno interno */
+    font-size: 16px; /* Tamaño de letra */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.contacto-form-col button:hover {
+    background-color: gray; /* Cambia a gris al pasar el ratón */
+}
+
+/* Evita que las columnas caigan a la siguiente línea */
+.contacto-atencion > .contacto-text-col,
+.contacto-atencion > .contacto-form-col {
+    margin: 0; /* Asegúrate de que no hay márgenes verticales */
+}
+
+.Formulario {
+    max-width: 400px; /* Define el ancho máximo deseado */
+    padding-left: 40px;
+}  
+
+.contacto-container .contacto-form-col:nth-child(2) {
+    border-left: 1.5px solid #fff; /* Línea blanca entre las columnas */
+    padding-left: 20px;
+    margin-left: 20px; /* Añadir espacio entre las columnas */
+}
+
+.mapas {
+    display: flex;
+    justify-content: center; /* Asegura que ambos mapas estén centrados horizontalmente */
+    align-items: center;
+    gap: 40px; /* Ajusta el espacio horizontal entre los mapas */
+    margin: 0 auto; /* Centra el contenedor de los mapas */
+    padding: 20px 0; /* Ajusta el espaciado superior e inferior */
+}
+
+iframe {
+    margin: 0; /* Asegúrate de que los `iframe` no tengan márgenes */
+    padding: 10px; /* Asegúrate de que los `iframe` no tengan relleno */
+}
+
+.mapa-m {
+    align-items: center;
+    text-align: right;
+}
+
+.mapas .mapa-m p {
+    text-align: center;
+    padding-left: 330px;
+}
+
+.mapas .mapa-b p {
+    text-align: center;
+    padding-right: 330px;
+}
+
+.lopd {
+    color: #fff;
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white; 
+    padding: 20px 0;
+    margin: 0;
+    width: 99vw;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.lopd-col {
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 767px) {
+    /* Asegura que todo el contenido no se desborde */
+    * {
+        box-sizing: border-box;
+    }
+
+    .contacto-container {
+        padding: 0;
+        margin: 0;
+        width: 100%; /* Asegura que ocupe el 100% del ancho */
+    }
+
+    .contacto-atencion {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        margin: 0;
+        padding: 0;
+        gap: 20px; /* Ajusta el espacio entre las columnas */
+    }
+
+    .contacto-container .contacto-form-col:nth-child(2) {
+        border-left: none; /* Elimina la línea divisoria en pantallas pequeñas */
+    }
+
+    .contacto-text-col,
+    .contacto-form-col {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Formulario {
+        width: 100%; /* El formulario ocupa todo el ancho en dispositivos móviles */
+        max-width: 100%; /* Elimina el límite máximo de ancho */
+        padding-left: 30px; /* Relleno pequeño a la izquierda */
+        padding-right: 70px; /* Relleno pequeño a la derecha */
+    }
+
+    /* Estilos para los campos de formulario en móvil */
+    .Formulario .form-control {
+        width: 100%; /* Los campos ocupan todo el ancho disponible */
+        box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+        padding: 10px; /* Ajusta el padding si es necesario */
+    }
+
+    .contacto-form-col {
+        padding-left: 0; /* Elimina cualquier relleno adicional en la columna */
+    }
+    
+    .contacto-form-col button {
+        width: 100%; /* El botón ocupa el 100% */
+    }
+
+    .mapas {
+        flex-direction: column; /* Los mapas deben apilarse */
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mapa-m iframe,
+    .mapa-b iframe {
+        width: 100%; /* Los iframes ocupan el 100% */
+        height: 300px; /* Ajusta la altura */
+    }
+
+    .mapas .mapa-m p,
+    .mapas .mapa-b p {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+
+
+
+
